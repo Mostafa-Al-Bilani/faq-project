@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     try {
       // Send request with Axios
       const response = await axios.post(
-        "http://localhost/faq-project/article-server/apis/v1/signup.php",
+        `${serverUrl}signup.php`,
         { fullname, email, password },
         { headers: { "Content-Type": "application/json" } }
       );

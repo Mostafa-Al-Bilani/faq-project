@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
     try {
       // Send request with Axios
       const response = await axios.post(
-        "http://localhost/faq-project/article-server/apis/v1/login.php",
-        { email, password },
+        `${serverUrl}login.php`,
+        {email, password },
         { headers: { "Content-Type": "application/json" } }
       );
 
