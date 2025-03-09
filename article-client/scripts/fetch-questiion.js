@@ -5,7 +5,7 @@ async function fetchFaq() {
     try {
     // Send request with Axios
     const response = await axios.get(
-      `http://localhost/FAQ%20PROJECT/article-server/apis/v1/fetch-questions.php?search=${(search_value)}`,
+      `http://localhost/faq-project/article-server/apis/v1/fetch-questions.php?search=${(search_value)}`,
 
       { headers: { "Content-Type": "application/json", "Authorization" : `Bearer ${token}`} }
     );
