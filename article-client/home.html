@@ -7,20 +7,28 @@
     <title>home</title>
   </head>
   <body>
+    <header>
+      <a href="./faq.html" class="filled-btn add-button">Add</a>
+      <button class="logout" id="logout">logout</button>
+    </header>
     <div class="flex column gap20">
       <div class="gap20 flex center">
         <div>
-          <input type="text" id="search" placeholder="search" required oninput="fetchFaq()" />
+          <input
+            type="text"
+            id="search"
+            placeholder="search"
+            required
+            oninput="fetchFaq()"
+          />
         </div>
       </div>
-      <div class="flex wrap gap20" id="container">
-        <div class="card center max-width-300 bg-color">
-        </div>
-      </div>
+      <div class="flex center full-width wrap gap20" id="container"></div>
     </div>
     <script src="./scripts/axios.min.js"></script>
+    <script src="./scripts/common.js"></script>
     <script src="./scripts/auth-route.js"></script>
     <script src="./scripts/fetch-questiion.js"></script>
-
+    <script src="./scripts/logout.js"></script>
   </body>
 </html>
