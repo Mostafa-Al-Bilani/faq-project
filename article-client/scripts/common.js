@@ -1,0 +1,1 @@
+const serverUrl = "http://localhost/FAQ PROJECT/article-server/apis/v1/"

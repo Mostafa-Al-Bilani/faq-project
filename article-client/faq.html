@@ -19,3 +19,42 @@
     <script src="./scripts/auth-route.js"></script>
   </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles/style.css" rel="stylesheet" />
+    <title>submit faq's</title>
+  </head>
+  <body>
+    <div class="flex column height-screen center">
+      <h1>Submit</h1>
+      <form
+        class="flex column center gap10 max-width-600 full-width"
+        id="faqForm"
+      >
+        <textarea
+          rows="5"
+          placeholder="Enter the question"
+          id="question"
+          required
+        ></textarea>
+        <textarea
+          rows="5"
+          placeholder="Enter the answer"
+          id="answer"
+          required
+        ></textarea>
+        <button class="filled-btn">submit</button>
+        <a href="./home.html" class="text-btn">go back</a>
+      </form>
+    </div>
+
+    <div class="toast" id="toast"></div>
+    <script src="./scripts/axios.min.js"></script>
+    <script src="./scripts/common.js"></script>
+    <script src="./scripts/auth-route.js"></script>
+    <script src="./scripts/add-question.js"></script>
+  </body>
+</html>
