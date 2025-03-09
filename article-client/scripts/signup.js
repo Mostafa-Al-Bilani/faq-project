@@ -1,18 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const loginForm = document.getElementById("loginForm");
+  const signupForm = document.getElementById("signupForm");
 
-  loginForm.addEventListener("submit", async function (event) {
+  signupForm.addEventListener("submit", async function (event) {
     event.preventDefault();
 
     // Get input values
+    const fullname = document.getElementById("fullname").value;
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
     try {
       // Send request with Axios
       const response = await axios.post(
-        "http://localhost/faq-project/article-server/apis/v1/login.php",
-        { email, password },
+        "http://localhost/faq-project/article-server/apis/v1/signup.php",
+        { fullname, email, password },
         { headers: { "Content-Type": "application/json" } }
       );
 
