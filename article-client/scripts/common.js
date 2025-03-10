@@ -1,1 +1,1 @@
-const serverUrl = "http://localhost/faq-project/article-server/apis/v1/"
+const serverUrl = "http://15.237.52.72/faq-project/article-server/apis/v1/"
